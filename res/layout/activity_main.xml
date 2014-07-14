@@ -1,0 +1,34 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mingming.research.phonecamera.MainActivity"
+ >
+
+        <SurfaceView
+        android:id="@+id/cameraView"
+        android:layout_width="256dip"
+        android:layout_height="192dip" />
+
+    <Button
+        android:id="@+id/button_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cameraView"
+        android:text="Change" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_change"
+        android:layout_alignBottom="@+id/button_change"
+        android:layout_marginLeft="64dip"
+        android:layout_toRightOf="@+id/button_change"
+        android:text="Save screen" />
+ </RelativeLayout>
+
+
+
